@@ -22,10 +22,15 @@ a{
   color: white;
   text-decoration: none;
   font-size: 30px;
+  -webkit-transition: all 0.5s
 }
 
 a:hover{
+  -webkit-transition: all 0.5s;
   color: black;
+  padding: 35px;
+  text-decoration: none;
+  font-size: 35px;
 }
 
 ul{
@@ -44,11 +49,26 @@ ul{
 }
 
 .footer{
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
   background-color: #9EFF00;
   text-align: center;
+}
+
+.containertwo{
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.containerthree{
+  right: 0
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  float: left;
 }
