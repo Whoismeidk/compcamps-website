@@ -17,6 +17,8 @@ words = [
     "wonder",
     "and",
     "not",
+    "man",
+    "stop"
 
 ]
 
@@ -28,7 +30,7 @@ tries = 7
 while word != solution and tries != 0:
     print(solution)
     guess = input("Guess a letter: ")
-    
+
 
     for i in range(0, len(word)):
         if word[i] == guess:
@@ -37,5 +39,5 @@ while word != solution and tries != 0:
             solution = "".join(solution)
         else:
             tries = tries - 1
-    
+
 print("Jokes. It was", word)
