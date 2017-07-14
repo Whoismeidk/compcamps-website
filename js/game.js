@@ -40,7 +40,10 @@ third.addEventListener('click', function() {
   setItems();
   } else {
     console.log("you're dumb");
-}});
+  }});
+fourth.addEventListener('click', function() {
+    setItems();
+});
 
 function setItems() {
   function rand(first) {
@@ -57,6 +60,7 @@ function setItems() {
   var j = rand(i);
   secondDiv.value = items[j].value;
   secondDiv.innerText = items[j].name;
+
 }
 
 setItems();
