@@ -25,7 +25,7 @@ words = [
 random.shuffle(words)
 word = words[0]
 solution = "_" * len(word)
-tries = 7
+tries = 7 * len(word)
 
 while word != solution and tries != 0:
     print(solution)
@@ -40,4 +40,7 @@ while word != solution and tries != 0:
         else:
             tries = tries - 1
 
-print("Jokes. It was", word)
+        if tries == 0:
+            print("Jokes. It was", word)
+
+print("The word was", word)
