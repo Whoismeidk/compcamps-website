@@ -41,6 +41,6 @@ while word != solution and tries != 0:
             tries = tries - 1
 
         if tries == 0:
-            print("Jokes. It was", word)
+            print("Jokes.", word)
 
 print("The word was", word)
