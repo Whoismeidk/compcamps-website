@@ -33,6 +33,15 @@ second.addEventListener('click', function() {
   }
 });
 
+third.addEventListener('click', function() {
+  if(firstDiv.value == secondDiv.value) {
+    count++;
+    console.log(count);
+  setItems();
+  } else {
+    console.log("you're dumb");
+}});
+
 function setItems() {
   function rand(first) {
     var i = Math.floor(Math.random()*(items.length));
